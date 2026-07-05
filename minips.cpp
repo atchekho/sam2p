@@ -920,7 +920,7 @@ MiniPS::VALUE MiniPS::Parser::parse1(int closer, int sev) {
   return Qerror; /* NOTREACHED */
 }
 
-void MiniPS::scanf_dict(VALUE job, bool show_warnings, ...) {
+void MiniPS::scanf_dict(VALUE job, int show_warnings, ...) {
   va_list ap;
   Dict *dict=RDICT(job);
   char *key;

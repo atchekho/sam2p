@@ -297,7 +297,7 @@ class MiniPS {
    *   NULLP
    * );
    */
-  static void scanf_dict(VALUE job, bool show_warnings, ...);
+  static void scanf_dict(VALUE job, int show_warnings, ...);
   static void setDumpPS(VALUE v, bool g);
   /** @param v must be T_REAL or T_INTEGER */
   static bool isZero(VALUE v);
